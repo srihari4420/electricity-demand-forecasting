@@ -219,7 +219,7 @@ order = (1, 1, 1)
 seasonal_order = (1, 1, 1, 52)
 ```
 
-Students should justify the choice of differencing orders and seasonal period. If exogenous variables are used, they should be passed through the `exog` argument.
+
 
 Example covariates include:
 
@@ -244,13 +244,12 @@ histogram gradient boosting
 XGBoost or LightGBM, if installed
 ```
 
-Students must ensure that lag and rolling features use only past information.
 
 ### Bayesian model
 
 The Bayesian model may be a regression model with seasonal, holiday, and temperature covariates.
 
-Students should discuss:
+discuss:
 
 ```text
 posterior uncertainty
@@ -261,7 +260,7 @@ interpretability of coefficients
 
 ### Neural or foundation-model-style model
 
-Students may include a neural forecasting model such as:
+include a neural forecasting model such as:
 
 ```text
 N-BEATS
@@ -270,7 +269,7 @@ LSTM
 Temporal Fusion Transformer
 ```
 
-Students should justify whether the amount of data is sufficient for the chosen model. For weekly data, neural models may overfit and may not outperform simpler approaches.
+should justify whether the amount of data is sufficient for the chosen model. For weekly data, neural models may overfit and may not outperform simpler approaches.
 
 ## Evaluation
 
@@ -295,7 +294,7 @@ performance around Christmas and New Year
 performance during unusually hot or cold weeks
 ```
 
-Students should compare all models against the seasonal naive benchmark.
+should compare all models against the seasonal naive benchmark.
 
 ## Train-test split
 
@@ -303,13 +302,13 @@ The default test set should be the final 104 weeks of the series.
 
 This corresponds to a two-year forecasting evaluation period.
 
-Students should not use a random train-test split, because this is a time-series forecasting problem.
+should not use a random train-test split, because this is a time-series forecasting problem.
 
 A stronger analysis may also include rolling-origin evaluation.
 
 ## Data leakage
 
-Students must be careful to avoid data leakage.
+must be careful to avoid data leakage.
 
 Examples of leakage include:
 
@@ -424,7 +423,7 @@ pytest
 
 ## Good practice
 
-Students should follow these principles:
+should follow these principles:
 
 ```text
 Use clear function names.
