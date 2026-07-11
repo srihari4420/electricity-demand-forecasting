@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.DS_Store
+.idea/
+.vscode/
+
+# do not commit large raw data or model artefacts
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+outputs/model_objects/*
+*.h5
+*.keras
+*.parquet
+
+# generated outputs are reproducible from the pipeline
+outputs/figures/*
+outputs/forecasts/*
+outputs/metrics/*
+!outputs/**/.gitkeep
+
+.venv312/
+.venv*/
