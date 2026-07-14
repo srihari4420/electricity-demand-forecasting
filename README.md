@@ -374,33 +374,6 @@ residual_acf.png
 prediction_intervals.png
 ```
 
-## Report
-
-The final report should summarise the analysis and discuss the modelling choices.
-
-A suggested report structure is:
-
-```text
-1. Introduction
-2. Data and preprocessing
-3. Exploratory analysis
-4. Forecasting methods
-5. Evaluation design
-6. Results
-7. Error analysis
-8. Discussion
-9. Limitations
-10. Conclusion
-```
-
-The report should answer the following questions:
-
-1. Which model performs best?
-2. Does any complex model meaningfully improve on the seasonal naive benchmark?
-3. Do temperature and holiday features improve performance?
-4. Are the more complex models justified?
-5. Which model would be recommended for operational use?
-6. What are the main limitations of the analysis?
 
 ## Testing
 
@@ -421,33 +394,3 @@ Run tests using:
 pytest
 ```
 
-## Good practice
-
-should follow these principles:
-
-```text
-Use clear function names.
-Keep reusable code in src/.
-Keep notebooks for exploration and explanation.
-Do not commit large raw data files.
-Make the pipeline reproducible from a fresh clone.
-Set random seeds where relevant.
-Compare every advanced model against simple benchmarks.
-Explain whether covariates are known at the forecast origin.
-```
-
-## Expected submission
-
-The submitted repository should include:
-
-```text
-README.md
-requirements.txt or environment.yml
-source code in src/
-pipeline script in scripts/
-notebooks showing exploration and results
-generated metrics and figures
-final report
-```
-
-The repository should run from a fresh clone using the instructions in this README.
