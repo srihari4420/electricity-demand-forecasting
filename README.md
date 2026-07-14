@@ -269,7 +269,7 @@ LSTM
 Temporal Fusion Transformer
 ```
 
-should justify whether the amount of data is sufficient for the chosen model. For weekly data, neural models may overfit and may not outperform simpler approaches.
+should justify whether the amount of data is sufficient for the chosen model. For weekly data, neural models may overfit and may not outperform simpler ways.
 
 ## Evaluation
 
