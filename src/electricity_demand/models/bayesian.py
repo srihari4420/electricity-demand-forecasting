@@ -1,7 +1,10 @@
-"""A light Bayesian regression on the feature table. BayesianRidge keeps the
-project dependency-free while still giving what the brief asks for: posterior
-uncertainty, predictive intervals, and interpretable coefficients. It places a
-prior over the weights and returns a predictive standard deviation per point."""
+"""Bayesian ridge regression on the feature table, via scikit-learn's
+BayesianRidge rather than a heavier package like PyMC. It places a Gaussian
+prior on the weights and a Gaussian noise model, then estimates the prior
+and noise precision from the data, which makes it a self-tuning, L2-
+regularised linear model. Each prediction gets a variance from the posterior
+weight covariance and the estimated noise, giving a real predictive interval,
+and the posterior mean weights stay interpretable as ordinary coefficients."""
 
 import numpy as np
 import pandas as pd

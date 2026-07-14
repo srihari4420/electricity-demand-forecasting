@@ -1,6 +1,3 @@
-"""SARIMAX. Defaults to the README starting point of (1,1,1)(1,1,1,52); the grid
-search can refine the non-seasonal order by AIC if asked."""
-
 import warnings
 import itertools
 

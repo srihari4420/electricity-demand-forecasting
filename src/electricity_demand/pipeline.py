@@ -119,7 +119,9 @@ def run_pipeline(weekly=None, temp_daily=None, save=True, run_grid=False,
         metrics.reset_index().to_csv(config.OUT_METRICS / "model_comparison.csv", index=False)
 
         headline_fc = {k: forecasts[k] for k in
-                       ["seasonal_naive", "sarimax", "feature_model", "bayesian", "neural"]
+                       ["seasonal_naive", "sarimax", "linear_regression",
+                        "random_forest", "gradient_boosting", "hist_gradient_boosting",
+                        "bayesian", "neural"]
                        if k in forecasts}
         viz.save(viz.forecast_comparison(train, test, headline_fc),
                  config.OUT_FIGURES / "forecast_comparison.png")
