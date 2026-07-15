@@ -1,5 +1,4 @@
-"""Put src/ on the path for pytest, and provide a synthetic weekly series so the
-tests need no network."""
+"""Put src/ on the path for pytest"""
 import sys
 from pathlib import Path
 import numpy as np
